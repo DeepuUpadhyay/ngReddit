@@ -1,0 +1,19 @@
+.card{
+    background-color: #f0a500;
+    margin: 3em 10px 20px 13em !important;
+    width: 62%;
+    height: 80%;
+    border-radius: 1em;
+    box-shadow: 5px 9px 20px ;
+    display: inline-table;
+    /* position: static !important; */
+}
+.ui.form{
+    margin: 20px;
+}
+.both-fields{
+    flex-direction: column !important;
+}
+.header{
+    margin-top: 5px !important;
+}

@@ -1,0 +1,25 @@
+<div class="ui centered card card">
+  <form class="ui form">
+    <h3 class="ui center aligned header">Add a Link</h3>
+    <div class="equal width fields both-fields">
+      <div class="field">
+        <label for="title">Title</label>
+        <input id="title" name="title" #newtitle  />
+      </div>
+
+      <div class="field">
+        <label for="link">Link</label>
+        <input id="link" name="link" #newlink />
+      </div>
+    </div>
+    <div class="ui green button" (click)="addArtical(newtitle, newlink)">
+      Submit link
+    </div>
+  </form>
+  <div class="ui grid posts">
+    <app-article
+      *ngFor="let article of sortedArticles()"
+      [article]="article"
+    ></app-article>
+  </div>
+</div>
